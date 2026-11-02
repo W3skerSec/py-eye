@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "py-eye"
+version = "2.1.0"
+description = "Olhos robóticos autônomos em ASCII para Termux/Android"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "anonvict"},
+]
+keywords = ["termux", "ascii", "robot", "eyes", "android", "oled", "curses"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Android",
+    "Environment :: Console :: Curses",
+    "Topic :: Games/Entertainment",
+]
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.scripts]
+py-eye = "eye:main"
+
+[tool.setuptools]
+py-modules = ["eye", "tools.sound_cli"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tools*"]
