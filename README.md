@@ -225,7 +225,12 @@ Inspirado no projeto **RoboEyes** do Dennis Hoelscher:
 Esse projeto é licenciado sob a licença MIT — veja [LICENSE](LICENSE) para detalhes.
 
 ---
-
 <p align="center">
   Feito com <img src="scr/mata-hijau.jpg" width="18"> e numpy.
+</p>
+
+<p align="center">
+  <a href="https://github.com/W3skerSec/py-eye">
+    <img alt="GitHub" src="https://img.shields.io/badge/github-W3skerSec%2Fpy--eye-black?style=flat-square">
+  </a>
 </p>
